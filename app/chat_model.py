@@ -7,8 +7,7 @@ tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 model = AutoModelForCausalLM.from_pretrained(
     MODEL_NAME,
     torch_dtype=torch.float16,
-    device_map="auto"
-)
+    device_map="auto")
 
 def chat(user_input, history):
     prompt = f"<|user|>\n{user_input}\n<|assistant|>\n"
