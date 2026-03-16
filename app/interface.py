@@ -1,6 +1,7 @@
 import gradio as gr
 from .chat_model import chat
 
+
 with open("app/styles.css") as f:
     css = f.read()
 
